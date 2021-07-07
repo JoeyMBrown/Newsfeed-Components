@@ -162,11 +162,9 @@ function articleMaker(article) {
     div.appendChild(item);
     })
 
-    articleDiv.appendChild(div);
-
     return div;
 }
 
 data.forEach(function(item) {
-  articleMaker(item);
+  articleDiv.appendChild(articleMaker(item));
 })
